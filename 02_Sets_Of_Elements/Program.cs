@@ -7,8 +7,9 @@ namespace _02_Sets_Of_Elements
     {
         static void Main(string[] args)
         {
-            int n = int.Parse(Console.ReadLine());
-            int m = int.Parse(Console.ReadLine());
+            string[] s = Console.ReadLine().Split(' ', StringSplitOptions.RemoveEmptyEntries);
+            int n = int.Parse(s[0]);
+            int m = int.Parse(s[1]);
 
             HashSet<int> firstSet = new HashSet<int>();
             HashSet<int> secondSet = new HashSet<int>();
@@ -21,6 +22,11 @@ namespace _02_Sets_Of_Elements
             {
                 secondSet.Add(int.Parse(Console.ReadLine()));
             }
+
+            firstSet.IntersectWith(secondSet);
+
+            Console.WriteLine(string.Join(" ", firstSet));
+
         }
     }
 }
