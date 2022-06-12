@@ -29,7 +29,7 @@ namespace _06_Wardrobe
                 }
             }
 
-
+            string[] clothesSearch = Console.ReadLine().Split(' ', StringSplitOptions.RemoveEmptyEntries);
         }
     }
 }
