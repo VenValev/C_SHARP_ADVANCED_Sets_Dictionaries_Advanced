@@ -36,7 +36,15 @@ namespace _06_Wardrobe
                 Console.WriteLine($"{color} clothes:");
                 foreach(var clothes in wardrobe[color].Keys)
                 {
-                    Console.WriteLine($"* {clothes} - {wardrobe[color][clothes]}");
+                    if(color == clothesSearch[0] && clothes == clothesSearch[1])
+                    {
+                        Console.WriteLine($"* {clothes} - {wardrobe[color][clothes]} (found!)");
+                    }
+                    else
+                    {
+                        Console.WriteLine($"* {clothes} - {wardrobe[color][clothes]}");
+                    }
+                    
                 }
             }
         }
