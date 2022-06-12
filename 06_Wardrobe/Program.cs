@@ -30,6 +30,12 @@ namespace _06_Wardrobe
             }
 
             string[] clothesSearch = Console.ReadLine().Split(' ', StringSplitOptions.RemoveEmptyEntries);
+
+            foreach(var color in wardrobe.Keys)
+            {
+                Console.WriteLine($"{color} clothes:");
+                foreach(var )
+            }
         }
     }
 }
