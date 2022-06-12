@@ -13,7 +13,7 @@ namespace _06_Wardrobe
             for(int i = 0; i < n; i++)
             {
                 string text = Console.ReadLine();
-                string[] clothesArg = text.Split("->", StringSplitOptions.RemoveEmptyEntries);
+                string[] clothesArg = text.Split(" -> ", StringSplitOptions.RemoveEmptyEntries);
                 string[] clothes = clothesArg[1].Split(',', StringSplitOptions.RemoveEmptyEntries);
                 if (!wardrobe.ContainsKey(clothesArg[0]))
                 {
@@ -27,8 +27,9 @@ namespace _06_Wardrobe
                     }
                     wardrobe[clothesArg[0]][clothes[j]]++;
                 }
-
             }
+
+
         }
     }
 }
