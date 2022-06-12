@@ -8,7 +8,7 @@ namespace _06_Wardrobe
         static void Main(string[] args)
         {
             int n = int.Parse(Console.ReadLine());
-            SortedDictionary<string, Dictionary<string, int>> wardrobe = new SortedDictionary<string, Dictionary<string, int>>();
+            Dictionary<string, Dictionary<string, int>> wardrobe = new Dictionary<string, Dictionary<string, int>>();
 
             for(int i = 0; i < n; i++)
             {
