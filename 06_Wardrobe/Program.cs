@@ -34,9 +34,9 @@ namespace _06_Wardrobe
             foreach(var color in wardrobe.Keys)
             {
                 Console.WriteLine($"{color} clothes:");
-                foreach(var clothes in wardrobe[color])
+                foreach(var clothes in wardrobe[color].Keys)
                 {
-
+                    Console.WriteLine($"* {clothes} - {wardrobe[color][clothes]}");
                 }
             }
         }
